@@ -1,0 +1,7 @@
+{
+  "name": "altomar-music",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mfortunat0/altomar-music",
+  "license": "MIT"
+}
