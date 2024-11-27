@@ -1,0 +1,41 @@
+.welcomeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 8vh 16px 8vh 16px;
+  align-items: center;
+  gap: 16px;
+  height: 100vh;
+}
+
+.welcomeContainer img {
+  width: 70vw;
+  border-radius: 50%;
+}
+
+.welcomeContainer div {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.welcomeContainer div button {
+  width: 45vw;
+  padding: 8px 0;
+  border-radius: 8px;
+  outline: none;
+  background-color: transparent;
+  color: var(--primary-white);
+  font-weight: bold;
+  border: 1px solid var(--primary-white);
+  font-size: 18px;
+}
+
+.welcomeContainer p {
+  font-style: italic;
+}
+
+.welcomeContainer p span {
+  font-weight: 900;
+  font-size: 18px;
+}
