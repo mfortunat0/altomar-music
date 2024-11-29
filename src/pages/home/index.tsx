@@ -2,7 +2,6 @@ import {
   FaAlignJustify,
   FaHandshakeSimple,
   FaMessage,
-  FaPen,
   FaRegCalendar,
   FaRegUser,
   FaSquareCheck,
@@ -98,17 +97,79 @@ export function Home() {
               <p>1</p>
               <p>Dez</p>
               <p>Dom</p>
-              <p>08:00/</p>
+              <p>08:00</p>
             </header>
             <footer>
               <h3>Equipe 01/12</h3>
               <p>daqui a 4 dias</p>
               <div>
-                <IoMdMusicalNote />
-                <FaHandshakeSimple />
-                <FaSwatchbook />
-                <FaMessage />
-                <FaPen />
+                <p>
+                  <IoMdMusicalNote />
+                  2/4
+                </p>
+                <p>
+                  <FaHandshakeSimple />6
+                </p>
+                <p>
+                  <FaSwatchbook />1
+                </p>
+                <p>
+                  <FaMessage />0
+                </p>
+              </div>
+            </footer>
+          </span>
+          <span className={style.card}>
+            <header>
+              <p>1</p>
+              <p>Dez</p>
+              <p>Dom</p>
+              <p>08:00</p>
+            </header>
+            <footer>
+              <h3>Equipe 01/12</h3>
+              <p>daqui a 4 dias</p>
+              <div>
+                <p>
+                  <IoMdMusicalNote />
+                  2/4
+                </p>
+                <p>
+                  <FaHandshakeSimple />6
+                </p>
+                <p>
+                  <FaSwatchbook />1
+                </p>
+                <p>
+                  <FaMessage />0
+                </p>
+              </div>
+            </footer>
+          </span>
+          <span className={style.card}>
+            <header>
+              <p>1</p>
+              <p>Dez</p>
+              <p>Dom</p>
+              <p>08:00</p>
+            </header>
+            <footer>
+              <h3>Equipe 01/12</h3>
+              <p>daqui a 4 dias</p>
+              <div>
+                <p>
+                  <IoMdMusicalNote />
+                  2/4
+                </p>
+                <p>
+                  <FaHandshakeSimple />6
+                </p>
+                <p>
+                  <FaSwatchbook />1
+                </p>
+                <p>
+                  <FaMessage />0
+                </p>
               </div>
             </footer>
           </span>
@@ -119,6 +180,18 @@ export function Home() {
           <h2>Aniversariantes</h2>
           <p>Ver todos</p>
         </header>
+        <footer className={style.namesContainer}>
+          <p>Matheus fortunato</p>
+          <p>Marcos zizal</p>
+          <p>Breno teixeira</p>
+          <p>Edilson garcia</p>
+          <p>Rebeca cena</p>
+          <p>Matheus fortunato</p>
+          <p>Marcos zizal</p>
+          <p>Breno teixeira</p>
+          <p>Edilson garcia</p>
+          <p>Rebeca cena</p>
+        </footer>
       </section>
     </section>
   );

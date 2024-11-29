@@ -12,10 +12,22 @@ export function Panel() {
     <main className={style.panelContainer}>
       {activeScreen === "home" && <Home />}
       <footer>
-        <FaHouse onClick={() => setActiveScreen("home")} />
-        <FaCalendarDays onClick={() => setActiveScreen("escalas")} />
-        <GiMusicalNotes onClick={() => setActiveScreen("repertorio")} />
-        <IoChatbubbleEllipses onClick={() => setActiveScreen("chat")} />
+        <FaHouse
+          className={activeScreen === "home" ? style.active : ""}
+          onClick={() => setActiveScreen("home")}
+        />
+        <FaCalendarDays
+          className={activeScreen === "escalas" ? style.active : ""}
+          onClick={() => setActiveScreen("escalas")}
+        />
+        <GiMusicalNotes
+          className={activeScreen === "repertorio" ? style.active : ""}
+          onClick={() => setActiveScreen("repertorio")}
+        />
+        <IoChatbubbleEllipses
+          className={activeScreen === "chat" ? style.active : ""}
+          onClick={() => setActiveScreen("chat")}
+        />
       </footer>
     </main>
   );

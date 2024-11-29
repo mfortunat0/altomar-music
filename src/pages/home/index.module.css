@@ -2,9 +2,19 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  animation: show 0.5s;
 }
 
-.homeContainer header {
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.homeContainer > header {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -17,11 +27,11 @@
 }
 
 .homeContainer section {
-  height: 35vh;
+  height: 38vh;
 }
 
 .homeContainer section:nth-child(3) {
-  height: 20vh;
+  height: 26vh;
 }
 
 .homeContainer section:nth-child(4) {
@@ -32,13 +42,13 @@
   font-weight: 300;
 }
 
-.homeContainer section header {
+.homeContainer > section > header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.homeContainer section header p {
+.homeContainer > section > header p {
   font-size: 12px;
   font-weight: 700;
 }
@@ -58,14 +68,14 @@
 .cardContainerMinisterios .card {
   display: flex;
   flex-direction: column;
-  min-width: 60vw;
-  max-width: 100px;
+  min-width: 50vw;
   border-radius: 50%;
+  margin-top: 8px;
 }
 
 .cardContainerMinisterios .card img {
   width: 100%;
-  max-height: 20vh;
+  max-height: 18vh;
   border-radius: 24px 24px 0 0;
 }
 
@@ -86,6 +96,10 @@
 
 .cardContainerMinisterios .cardFooter div p {
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 14px;
 }
 
 .cardContainerMinisterios .cardFooter h3 {
@@ -95,4 +109,92 @@
 }
 
 .cardContainerEscalas {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.cardContainerEscalas .card {
+  display: flex;
+  margin-top: 8px;
+  gap: 16px;
+  background-color: var(--primary-blue);
+  padding: 16px;
+  border-radius: 8px 24px 8px 8px;
+}
+
+.cardContainerEscalas .card header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainerEscalas .card header p {
+  line-height: 22px;
+  font-size: 12px;
+}
+
+.cardContainerEscalas .card header p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cardContainerEscalas .card header p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cardContainerEscalas .card header p:nth-child(3),
+.cardContainerEscalas .card header p:nth-child(4) {
+  font-weight: 300;
+  line-height: 14px;
+}
+
+.cardContainerEscalas .card footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContainerEscalas .card footer h3 {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.cardContainerEscalas .card footer p {
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.cardContainerEscalas .card footer div {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.cardContainerEscalas .card footer div p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: bold;
+}
+
+.cardContainerEscalas .card footer div svg {
+  font-size: 14px;
+}
+
+.namesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.namesContainer p {
+  background-color: var(--primary-blue);
+  padding: 6px 16px;
+  border-radius: 8px;
 }
