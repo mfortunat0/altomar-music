@@ -4,6 +4,7 @@ import { GiMusicalNotes } from "react-icons/gi";
 import { Home } from "../home";
 import { IoChatbubbleEllipses } from "react-icons/io5";
 import style from "./index.module.css";
+import { Escalas } from "../escalas";
 
 export function Panel() {
   const [activeScreen, setActiveScreen] = useState("home");
@@ -11,7 +12,8 @@ export function Panel() {
   return (
     <main className={style.panelContainer}>
       {activeScreen === "home" && <Home />}
-      <footer>
+      {activeScreen === "escalas" && <Escalas />}
+      <footer className={style.panelFooter}>
         <FaHouse
           className={activeScreen === "home" ? style.active : ""}
           onClick={() => setActiveScreen("home")}

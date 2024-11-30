@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa6";
 import style from "./index.module.css";
 import heroImage from "../../assets/header.png";
+import userImage from "../../assets/user.jpg";
 import { IoMdMusicalNote } from "react-icons/io";
 
 export function Home() {
@@ -103,32 +104,11 @@ export function Home() {
               <h3>Equipe 01/12</h3>
               <p>daqui a 4 dias</p>
               <div>
-                <p>
-                  <IoMdMusicalNote />
-                  2/4
-                </p>
-                <p>
-                  <FaHandshakeSimple />6
-                </p>
-                <p>
-                  <FaSwatchbook />1
-                </p>
-                <p>
-                  <FaMessage />0
-                </p>
+                <img src={userImage} alt="" />
+                <img src={userImage} alt="" />
+                <img src={userImage} alt="" />
+                <img src={userImage} alt="" />
               </div>
-            </footer>
-          </span>
-          <span className={style.card}>
-            <header>
-              <p>1</p>
-              <p>Dez</p>
-              <p>Dom</p>
-              <p>08:00</p>
-            </header>
-            <footer>
-              <h3>Equipe 01/12</h3>
-              <p>daqui a 4 dias</p>
               <div>
                 <p>
                   <IoMdMusicalNote />
@@ -156,6 +136,45 @@ export function Home() {
             <footer>
               <h3>Equipe 01/12</h3>
               <p>daqui a 4 dias</p>
+              <div>
+                <img src={userImage} alt="" />
+                <img src={userImage} alt="" />
+                <img src={userImage} alt="" />
+                <img src={userImage} alt="" />
+              </div>
+              <div>
+                <p>
+                  <IoMdMusicalNote />
+                  2/4
+                </p>
+                <p>
+                  <FaHandshakeSimple />6
+                </p>
+                <p>
+                  <FaSwatchbook />1
+                </p>
+                <p>
+                  <FaMessage />0
+                </p>
+              </div>
+            </footer>
+          </span>
+          <span className={style.card}>
+            <header>
+              <p>1</p>
+              <p>Dez</p>
+              <p>Dom</p>
+              <p>08:00</p>
+            </header>
+            <footer>
+              <h3>Equipe 01/12</h3>
+              <p>daqui a 4 dias</p>
+              <div>
+                <img src={userImage} alt="" />
+                <img src={userImage} alt="" />
+                <img src={userImage} alt="" />
+                <img src={userImage} alt="" />
+              </div>
               <div>
                 <p>
                   <IoMdMusicalNote />

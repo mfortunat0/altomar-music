@@ -28,14 +28,17 @@
 
 .homeContainer section {
   height: 38vh;
+  min-height: 38vh;
 }
 
 .homeContainer section:nth-child(3) {
-  height: 26vh;
+  height: 30vh;
+  min-height: 30vh;
 }
 
 .homeContainer section:nth-child(4) {
   height: 15vh;
+  min-height: 15vh;
 }
 
 .homeContainer section header h2 {
@@ -68,7 +71,7 @@
 .cardContainerMinisterios .card {
   display: flex;
   flex-direction: column;
-  min-width: 50vw;
+  min-width: 200px;
   border-radius: 50%;
   margin-top: 8px;
 }
@@ -98,7 +101,7 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 8px;
   font-size: 14px;
 }
 
@@ -129,6 +132,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.cardContainerEscalas .card header div {
+  display: flex;
+}
+
+.cardContainerEscalas .card img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }
 
 .cardContainerEscalas .card header p {
@@ -170,15 +183,20 @@
 
 .cardContainerEscalas .card footer div {
   display: flex;
-  gap: 8px;
+  gap: 12px;
   margin-top: 16px;
+}
+
+.cardContainerEscalas .card footer div:nth-child(3) {
+  margin-top: 8px;
+  gap: 2px;
 }
 
 .cardContainerEscalas .card footer div p {
   font-size: 14px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   font-weight: bold;
 }
 
@@ -191,6 +209,7 @@
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 8px;
+  padding-bottom: 40vh;
 }
 
 .namesContainer p {

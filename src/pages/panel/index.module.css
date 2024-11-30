@@ -4,10 +4,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-bottom: 40vh;
 }
 
-.panelContainer > footer {
+.panelContainer .panelFooter {
   display: flex;
   position: fixed;
   top: 92vh;
@@ -19,15 +18,17 @@
   margin-top: auto;
 }
 
-.panelContainer footer svg {
+.panelContainer .panelFooter svg {
   font-size: 24px;
   color: var(--primary-white);
   transition: all 0.3s;
+  padding: 4px;
+  height: 28px;
+  width: 50px;
+  border-radius: 24px;
 }
 
 .active {
   background-color: var(--primary-white);
   fill: var(--primary-dark);
-  padding: 2px;
-  border-radius: 4px;
 }

@@ -1,0 +1,138 @@
+.escalasContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: show 0.5s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.escalasContainer header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.escalasContainer nav {
+  display: flex;
+  background-color: var(--primary-dark);
+  border-radius: 24px;
+}
+
+.escalasContainer nav button {
+  border: none;
+  border-radius: 24px;
+  transition: background-color 0.3s;
+}
+
+.escalasContainer nav .activeButton {
+  background-color: var(--primary-white);
+  color: var(--primary-dark);
+}
+
+.escalasContainer header svg {
+  color: var(--primary-white);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cardContainerEscalas {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 68vh;
+  max-height: 68vh;
+  min-width: 100%;
+  overflow: auto;
+}
+
+.cardContainerEscalas .card {
+  display: flex;
+  margin-top: 8px;
+  gap: 16px;
+  background-color: var(--primary-blue);
+  padding: 16px;
+  border-radius: 8px 24px 8px 8px;
+  width: 85%;
+}
+
+.cardContainerEscalas .card header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainerEscalas .card header p {
+  line-height: 22px;
+  font-size: 12px;
+}
+
+.cardContainerEscalas .card header p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cardContainerEscalas .card header p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cardContainerEscalas .card header p:nth-child(3),
+.cardContainerEscalas .card header p:nth-child(4) {
+  font-weight: 300;
+  line-height: 14px;
+}
+
+.cardContainerEscalas .card footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContainerEscalas .card img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.cardContainerEscalas .card footer h3 {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.cardContainerEscalas .card footer p {
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.cardContainerEscalas .card footer div {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.cardContainerEscalas .card footer div:nth-child(3) {
+  margin-top: 8px;
+  gap: 2px;
+}
+
+.cardContainerEscalas .card footer div p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.cardContainerEscalas .card footer div svg {
+  font-size: 14px;
+}
