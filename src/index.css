@@ -5,7 +5,11 @@
   --secondary-dark: #171617;
   --primary-red: #ff3e4d;
   --primary-blue: #0071b2;
+  --secondary-blue: #219ebc;
+  --primary-yellow: #f6c90e;
   --primary-white: #e3e6e4;
+  --lightHouse: #fe5808;
+  --storm: #2596be;
 }
 
 * {
@@ -26,7 +30,8 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+span {
   color: var(--primary-white);
   text-decoration: none;
 }

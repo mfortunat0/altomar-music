@@ -8,13 +8,17 @@ import {
 } from "react-icons/fa6";
 import { useState } from "react";
 
-export function Escalas() {
+interface EscalasProps {
+  setShowSideBar: (state: boolean) => void;
+}
+
+export function Escalas({ setShowSideBar }: EscalasProps) {
   const [activeButton, setActiveButton] = useState("proximas");
 
   return (
     <section className={style.escalasContainer}>
       <header>
-        <FaAlignJustify />
+        <FaAlignJustify onClick={() => setShowSideBar(true)} />
         <h2>Minhas Escalas</h2>
       </header>
       <nav>

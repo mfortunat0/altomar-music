@@ -1,0 +1,85 @@
+.repertorioContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: show 0.5s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.repertorioContainer header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.repertorioContainer nav {
+  display: flex;
+  background-color: var(--primary-dark);
+  border-radius: 24px;
+}
+
+.repertorioContainer nav button {
+  border: none;
+  border-radius: 24px;
+  transition: background-color 0.3s;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.repertorioContainer nav .activeStorm {
+  background-color: var(--storm);
+  color: var(--primary-white);
+}
+
+.repertorioContainer nav .activeLightHouse {
+  background-color: var(--lightHouse);
+  color: var(--primary-white);
+}
+
+.repertorioContainer nav .activeAltomar {
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+}
+
+.repertorioContainer header svg {
+  color: var(--primary-white);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  height: 68vh;
+  min-height: 68vh;
+  max-height: 68vh;
+  overflow: auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card img {
+  width: 86px;
+  border-radius: 4px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card span {
+  font-size: 12px;
+}

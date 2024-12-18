@@ -12,11 +12,15 @@ import heroImage from "../../assets/header.png";
 import userImage from "../../assets/user.jpg";
 import { IoMdMusicalNote } from "react-icons/io";
 
-export function Home() {
+interface HomeProps {
+  setShowSideBar: (state: boolean) => void;
+}
+
+export function Home({ setShowSideBar }: HomeProps) {
   return (
     <section className={style.homeContainer}>
       <header>
-        <FaAlignJustify />
+        <FaAlignJustify onClick={() => setShowSideBar(true)} />
         <h1>Altomar Music</h1>
       </header>
       <section>

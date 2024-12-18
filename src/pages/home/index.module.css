@@ -27,8 +27,9 @@
 }
 
 .homeContainer section {
-  height: 38vh;
-  min-height: 38vh;
+  height: 260px;
+  min-height: 260px;
+  max-height: 260px;
 }
 
 .homeContainer section:nth-child(3) {
@@ -122,7 +123,7 @@
   display: flex;
   margin-top: 8px;
   gap: 16px;
-  background-color: var(--primary-blue);
+  background-color: var(--lightHouse);
   padding: 16px;
   border-radius: 8px 24px 8px 8px;
 }
@@ -209,11 +210,11 @@
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 8px;
-  padding-bottom: 40vh;
+  padding-bottom: 86px;
 }
 
 .namesContainer p {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   padding: 6px 16px;
   border-radius: 8px;
 }
